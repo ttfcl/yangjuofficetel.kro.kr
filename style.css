@@ -136,6 +136,29 @@ body {
 }
 .topButton {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 20px;
+}
+.bottomButton {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(139, 225, 252);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bottomButton > a {
+    color: white;
+    display: block;
+    width: 33%;
+    text-decoration: none;
+    font-size: 20px;
+}
+@media (max-width: 992px) {
+    .bottomButton {
+        display: flex;
+        justify-content: center;
+    }   
 }
